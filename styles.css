@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  /* App styling */
+  .App {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'GFS Didot', serif;
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .task-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .add-task-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    text-align: left;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .task-item span {
+    cursor: pointer;
+  }
+  
+  .task-item span.completed {
+    text-decoration: line-through;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; /* Por defecto está oculto */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.show {
+    display: flex;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .delete-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
